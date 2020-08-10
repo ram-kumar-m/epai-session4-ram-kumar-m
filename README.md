@@ -94,3 +94,88 @@ The Qualiean data type has some very useful inbuilt methods, Some of which are d
     p or q 
     p and q   
     ```
+
+## Test Cases (using __Pytest__)
+1. ### test_readme_exists
+   Checks if there is a README.md file in the same folder.
+
+2. ### test_readme_contents
+   Checks if the README.md file has alteast 500 words.
+
+3. ### test_readme_proper_description
+   Checks if the required functions are present in the README.md file.
+
+4. ### test_readme_file_for_formatting
+   Checks if there are adequete headings present in the README.md file.
+
+5. ### test_indentations
+   Checks if proper indentations are present throughout the python file.
+   using the rule of 4 spaces equals 1 Tab.
+
+6. ### test_function_name_had_cap_letter
+   Checks if any one the functions have capital letters used in their names, which breaks the PEP8 conventions.
+
+7. ### test_repr
+   Checks if the `__repr__` method exits for the class, and displays relevant information.
+
+8. ### test_str
+   Checks if the `__str__` methods exists so that the datatype can be printed properly,
+
+10. ### test_add_two_qualeans
+    Checks if we can safely and properly add two qualeans.
+
+11. ### test_cant_add_num_with_qualeans
+    Ensures qualeans can only be added with qualeans and nothing else.
+
+12. ### test_qualean_class_exists_for_states
+    Ensures that allowed inputs of [0, 1, -1] can have their own qualean objects.
+
+13. ### test_for_invalid_inputs
+    Checks if invalid inputs, values other than 0, -1, 1 raises a `ValueError`.
+
+14. ### test_for_derieved_datatype
+    Checks if the qualean obtained by doing a binary operation on two qualeans has a field with value 'Derieved', letting us know the qualean so formed was not formed with user input.
+
+15. ### test_scalar_multiplication_by_100
+    Checks for scalar multiplicaton of qualeans with numbers.
+    In this case <br> `if q + q + q ... 100 times = 100 * q`.
+   
+16. ### test_for_eq
+    Checks for the equality operation of qualeans. namely <br>
+    `if q1 == q2`.
+   
+17. ### test_for_decimal_sqrt
+    Checks if the inbulit `sqrt` method gives the same value as the `Decimal.sqrt` method.
+
+18. ### test_central_limit_theorum
+    Checks if sum of 1 million different qs is very close to zero (using the `isclose` method).
+
+19. ### test_qualean_multiplication
+    Checks if qualean mutiplication is executed as desired.
+
+20. ### test_gt
+    Checks the grater than operator (`>`)
+
+20. ### test_ge
+    Checks the grater than or equal to operator (`>=`)
+
+20. ### test_lt
+    Checks the less than operator (`<`)
+
+20. ### test_le
+    Checks the less than or equal to operator (`<=`)
+
+23. ### test_bool
+    Checks if bool method returns `True or False` as required.
+   
+24. ### test_invertsign
+    Checks if the `__invertsign__` function yields a new qualean with internal value mutiplied by -1.
+
+25. ### test_float_constructor
+    Checks if the float constrctor yields a float value from the Qualean Class.
+
+26. ### test_and
+    Checks if `and` operator works, hence can be used for shortcirtuiting.
+
+26. ### test_or
+    Checks if `or` operator works, hence can be used for shortcirtuiting.
